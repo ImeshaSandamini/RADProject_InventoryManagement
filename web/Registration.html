@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Registration</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+    body{        
+background-color:lightblue;
+background-image :linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)),url(kar.jpg);
+}
+
+h1{
+color:green;
+}
+
+.registerbox input[type="text"]
+{
+    width:438px;
+	padding: 8px 8px;
+	margin: 8px 1px;
+	border-bottom:1px solid #fff;
+	background:transparent;
+	outline:none;
+	height:10px;
+	color:white;
+	font-size:16px;
+	border-radius:20px;
+	
+}
+.registerbox input[type="password"]
+{
+    width:438px;
+	padding: 8px 8px;
+	margin: 8px 1px;
+	border-bottom:1px solid #fff;
+	background:transparent;
+	outline:none;
+	height:10px;
+	color:white;
+	font-size:16px;
+	border-radius:20px;
+	
+}
+.registerbox input[type="radio"]
+{
+
+	border-bottom:1px solid #fff;
+	background:transparent;
+	outline:none;
+	height:15px;
+	color:#fff;
+	font-size:16px;
+	
+}
+
+
+.registerbox input[type="submit"]
+{
+
+	outline:none;
+	height:30px;
+	background:#fb2525;
+	color:#fff;
+	font-size:18px;
+	border-radius:20px;
+}
+
+.p{
+font-color:lightblue;
+}
+
+.registerbox{
+	width:500px;
+	height:750px;
+	background:rgba(0,0,0,0.7);
+	color:#fff;
+	top:80%;
+	left:50%; 
+	position:absolute;
+	transform:translate(-50%,-50%);
+	box-sizing:border-box;
+	padding:70px 30px;
+	}
+        
+        
+        .topnav{
+float:right;
+list-style:none;
+margin-top:30px;
+}
+
+.topnav li{
+display:inline-block;
+}
+
+.topnav li a{
+color:white;
+text-decoration:none;
+padding:5px 20px;
+font-family:"Roboto",sans-serif;
+font-size:15px;
+}
+
+.topnav li.active a{
+border:2px solid white;
+}
+
+.topnav li a:hover{
+border:2px solid white;
+}
+
+        </style>
+    </head>
+    <body>
+    <div class="row">
+    <ul class="topnav"> 
+  <li><a href="home.jsp">HOME</a></li>
+  <li><a href="about.html">ABOUT US</a></li>
+  <li><a href="login.html">LOGIN</a></li>
+ 
+  </ul>
+</div>
+  
+<div class="registerbox">
+<form name="form" action="Registration.jsp" method="POST">
+<h1>Registration Form</h1>
+
+
+
+First Name
+<input type="text" name="firstname" placeholder=" Enter the First name"><br>
+
+Last Name
+<input type="text" name="lastname" placeholder=" Enter the Last name"><br>
+
+
+Gender
+<div class="radio-group">
+<input type="radio" id="option-one" name="gender">
+<label for="option-one">Male</label>
+<input type="radio" id="option-two" name="gender">
+<label for="option-two">FeMale</label><br>
+</div>
+
+NIC
+<input type="text" name="nic" placeholder=" Enter the NIC"><br>
+
+Address
+<input type="text" name="address" placeholder=" Enter the Address"><br>
+
+
+Email
+<input type="text" name="email" placeholder=" Enter the Email"><br>
+
+User Name
+<input type="text" name="username" placeholder=" Enter the User Name"><br>
+
+
+Password
+<input type="password" name="password" placeholder=" Enter the Password"><br>
+<br>
+
+<input type="submit" value="register">
+
+<hr>
+Already Member<br>
+<input type="submit" value="login">
+</form>
+</div>
+    </body>
+</html>
