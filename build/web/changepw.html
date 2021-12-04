@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Change password</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+ 
+h1{
+color:green;
+}
+
+.registerbox input[type="text"]
+{
+    width:438px;
+	padding: 8px 8px;
+	margin: 8px 1px;
+	border-bottom:1px solid #fff;
+	background:transparent;
+	outline:none;
+	height:10px;
+	color:white;
+	font-size:16px;
+	border-radius:20px;
+	
+}
+
+.registerbox input[type="password"]
+{
+    width:438px;
+	padding: 8px 8px;
+	margin: 8px 1px;
+	border-bottom:1px solid #fff;
+	background:transparent;
+	outline:none;
+	height:10px;
+	color:white;
+	font-size:16px;
+	border-radius:20px;
+	
+}
+.registerbox input[type="radio"]
+{
+
+	border-bottom:1px solid #fff;
+	background:transparent;
+	outline:none;
+	height:15px;
+	color:#fff;
+	font-size:16px;
+	
+}
+
+
+.registerbox input[type="submit"]
+{
+
+	outline:none;
+	height:30px;
+	background:#fb2525;
+	color:#fff;
+	font-size:18px;
+	border-radius:20px;
+}
+
+.p{
+font-color:lightblue;
+}
+
+.registerbox{
+	width:500px;
+	height:400px;
+	background:rgba(0,0,0,0.7);
+	color:#fff;
+	top:50%;
+	left:50%; 
+	position:absolute;
+	transform:translate(-50%,-50%);
+	box-sizing:border-box;
+	padding:70px 30px;
+	}
+
+.topnav{
+float:right;
+list-style:none;
+margin-top:30px;
+}
+
+.topnav li{
+display:inline-block;
+}
+
+.topnav li a{
+color:white;
+text-decoration:none;
+padding:5px 20px;
+font-family:"Roboto",sans-serif;
+font-size:15px;
+}
+
+.topnav li.active a{
+border:2px solid white;
+}
+
+.topnav li a:hover{
+border:2px solid white;
+}
+   body{        
+background-color:lightblue;
+background-image :linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)),url(kar.jpg);
+}
+.footer {
+    position:absolute;
+    bottom: 0;
+    width: 100%;
+    height :25px;
+    text-align : center ;
+    background-color: #20b2aa;
+
+}
+
+        </style>
+    </head>
+    <body>
+        <div class="row">
+<ul class="topnav">
+  <li class="active"><a href="home.jsp">HOME</a></li>
+  <li><a href="about.html">ABOUT US</a></li>
+  <li><a href="logout.jsp">LOG OUT</a></li>
+  </ul>
+        </div>
+        
+        
+      <div class="registerbox">  
+<h1> Change Your Account Password</h1>
+<form name="form" action="changepw.jsp" method="POST">
+
+Current password
+<input type="password" name="current" placeholder=" Enter current Password"><br>
+
+New Password<br>
+<input type="password" name="new" placeholder=" Enter new Password"><br>
+
+
+Confirm Password
+<input type="password" name="confirm" placeholder=" Enter Confirm Password"><br>
+<input type="submit" value="change">
+</form>
+      </div>
+        <div class="footer  col-12">
+
+            © Copyright 2020. All rights reserved.
+        </div> 
+    </body>
+</html>
