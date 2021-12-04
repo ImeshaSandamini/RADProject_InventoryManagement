@@ -1,0 +1,2 @@
+# RADProject_InventoryManagement
+Rapid Application development project
